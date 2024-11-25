@@ -3,36 +3,30 @@ body {
     margin: 0px;
 }
 
-a{
+a {
     text-decoration: none;
     color: white;
 }
-.destacados{
+
+.destacados, .title {
     background: linear-gradient(90deg, #520555 0%, #920A3E 100%);
     border-radius: 8px;
-    padding-left: 10px;
+    padding: 10px;
 }
 
-.title{
-    background: linear-gradient(90deg, #520555 0%, #920A3E 100%);
-    border-radius: 8px;
-    width: fit-content;
-    padding-left: 10px;
-    padding-right: 10px;
-}
 .header {
     background-color: #520555;
     color: white;
     text-align: center;
     padding: 10px;
     display: flex;
-    justify-content: flex-start; /* Cambiado de space-between a flex-start */
+    justify-content: flex-start;
     align-items: center;
 }
 
 .header h1 {
     margin: 0px;
-    margin-left: 10px; /* Añadir margen izquierdo para separar del logo */
+    margin-left: 10px;
 }
 
 .header .logo {
@@ -40,20 +34,10 @@ a{
     padding: 0px;
 }
 
-.menu {
+.menu, .submenu, .categoriasbtn {
     background-color: #920A3E;
     color: white;
     text-align: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.submenu {
-    background-color: #920A3E;
-    color: white;
-    text-align: center;
-    padding: 10px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -61,24 +45,18 @@ a{
 
 .categoriasbtn {
     background-color: #FF5733;
-    color: white;
-    text-align: center;
-    padding: 10px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    transition: transform 0.3s ease; /* Añadir transición para suavizar el cambio */
+    transition: transform 0.3s ease;
 }
 
 .categoriasbtn:hover {
     background-color: #FFC300;
-    transform: scale(1.1); /* Escalar el botón en lugar de cambiar el padding */
+    transform: scale(1.1);
 }
 
 .structure {
     background-color: #750832;
-    padding: 20px; /* Ajustar el padding a un valor adecuado */
-    min-height: 100vh; /* Asegurar que ocupe al menos la altura de la ventana */
+    padding: 20px;
+    min-height: 100vh;
 }
 
 .structure h2 {
@@ -94,7 +72,6 @@ a{
     margin: 0 auto;
 }
 
-/* Estilos para cada tarjeta de juego */
 .game-card {
     background: #2a2a2a;
     border-radius: 12px;
@@ -108,7 +85,6 @@ a{
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
 }
 
-/* Contenedor de la imagen */
 .game-image {
     position: relative;
     width: 100%;
@@ -127,7 +103,6 @@ a{
     transform: scale(1.05);
 }
 
-/* Etiqueta de categoría */
 .game-category {
     position: absolute;
     top: 1rem;
@@ -140,7 +115,6 @@ a{
     font-weight: 500;
 }
 
-/* Información del juego */
 .game-info {
     padding: 1.5rem;
 }
@@ -152,7 +126,6 @@ a{
     margin: 0;
 }
 
-/* Detalles del juego */
 .game-details {
     display: flex;
     justify-content: space-between;
@@ -162,7 +135,6 @@ a{
     font-size: 0.875rem;
 }
 
-/* Botón de acción */
 .game-button {
     width: 100%;
     background: #FF5733;
@@ -180,7 +152,6 @@ a{
     background: #FFC300;
 }
 
-/* Medios queries para responsividad */
 @media (max-width: 768px) {
     .games-container {
         grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -264,7 +235,6 @@ a{
     transform: scale(1.05);
 }
 
-/* Nuevos estilos para los requisitos sin tablas */
 .requirements-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -316,7 +286,6 @@ a{
     color: white;
 }
 
-/* Estilos para dispositivos móviles */
 @media (max-width: 768px) {
     .game-container {
         padding: 10px;
