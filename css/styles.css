@@ -8,10 +8,18 @@ a {
     color: white;
 }
 
-.destacados, .title {
+.destacados {
     background: linear-gradient(90deg, #520555 0%, #920A3E 100%);
     border-radius: 8px;
-    padding: 10px;
+    padding-left: 10px;
+}
+
+.title {
+    background: linear-gradient(90deg, #520555 0%, #920A3E 100%);
+    border-radius: 8px;
+    width: fit-content;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 .header {
@@ -34,7 +42,7 @@ a {
     padding: 0px;
 }
 
-.menu, .submenu, .categoriasbtn {
+.menu {
     background-color: #920A3E;
     color: white;
     text-align: center;
@@ -43,8 +51,24 @@ a {
     align-items: center;
 }
 
+.submenu {
+    background-color: #920A3E;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .categoriasbtn {
     background-color: #FF5733;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     transition: transform 0.3s ease;
 }
 
@@ -290,8 +314,21 @@ a {
     .game-container {
         padding: 10px;
     }
-    
+
     .requirements-grid {
         grid-template-columns: 1fr;
+    }
+}
+
+/* Media query para aumentar el tamaño de letra en pantallas pequeñas */
+@media (max-width: 768px) {
+    .categoriasbtn {
+        font-size: 1.2rem; /* Aumentar tamaño de letra */
+    }
+}
+
+@media (max-width: 480px) {
+    .categoriasbtn {
+        font-size: 1.5rem; /* Aumentar aún más el tamaño de letra en pantallas muy pequeñas */
     }
 }
