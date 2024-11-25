@@ -70,6 +70,7 @@ a {
     justify-content: center;
     align-items: center;
     transition: transform 0.3s ease;
+    font-size: 1rem; /* Tamaño de letra base */
 }
 
 .categoriasbtn:hover {
@@ -323,12 +324,12 @@ a {
 /* Media query para aumentar el tamaño de letra en pantallas pequeñas */
 @media (max-width: 768px) {
     .categoriasbtn {
-        font-size: 1.2rem; /* Aumentar tamaño de letra */
+        font-size: 2rem; /* Aumentar tamaño de letra */
     }
 }
 
 @media (max-width: 480px) {
     .categoriasbtn {
-        font-size: 1.5rem; /* Aumentar aún más el tamaño de letra en pantallas muy pequeñas */
+        font-size: 2.5rem; /* Aumentar aún más el tamaño de letra en pantallas muy pequeñas */
     }
 }
